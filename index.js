@@ -20,12 +20,14 @@ function destructivelyRemoveFirstKitten(){
 
 function appendKitten(name){
     var newArray = kittens.slice()
-    newArray.unshift(name)
+    newArray.push(name)
     return newArray
 }
 
 function prependKitten(name){
-
+    var newArray = kittens.slice()
+    newArray.unshift(name)
+    return newArray
 }
 
 function removeLastKitten(){
